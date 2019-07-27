@@ -5,7 +5,9 @@ A paraméterben megadott szám adja a monster kezdeti életerejét. A monster is
 """
 
 
-import randomdef fight(monsterhp):
+import random
+
+def fight(monsterhp):
     while True:
         dmg = random.randint(1,6)
         monsterdmg = random.randint(1,7)
