@@ -5,7 +5,9 @@ Az is számít, ha pl a szöveg huszadik karaktere a “C”, majd pár karakter
 """
 
 arr = 'hduiejdcuhcukdwadagfqewqorkryjsjsj'
-fin = {}for i in arr:
+fin = {}
+
+for i in arr:
     if i == 'c':
         fin[i] = 1
     elif i == 'u' and 'c' == ''.join(fin):
@@ -15,7 +17,12 @@ fin = {}for i in arr:
     elif i == 'o' and 'cuk' == ''.join(fin):
         fin[i] = 1
     elif i == 'r' and 'cuko' == ''.join(fin):
-        fin[i] = 1if ''.join(fin) == 'cukor':
+        fin[i] = 1
+
+if ''.join(fin) == 'cukor':
     print('cukros')
 else:
     print('nem cukros')
+
+
+
