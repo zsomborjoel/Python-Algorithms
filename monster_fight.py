@@ -11,18 +11,20 @@ def fight(monsterhp):
     while True:
         dmg = random.randint(1,6)
         monsterdmg = random.randint(1,7)
-        print('monster: ', monsterdmg)
+        print('Monster dmg: ', monsterdmg)
         if monsterdmg == 7:
-            return False
-            continue
-        
-        print('player', dmg)
+        	print('Hero been killed')
+        	return False
+        	break
+
+        print('Hero dmg', dmg)
         monsterhp = monsterhp - dmg
-        print('monsterhp: ',monsterhp)
-        
-        if monsterhp == 0:
-            return True
-            continue
-        
+        print('Monster hp: ',monsterhp)
+
+        if monsterhp <= 0:
+        	print('Monster been killed.')
+        	return True
+        	break
+
 #giving 50hp for the monster
 fight(50)
